@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice10</title>
+  <style>
+    table {
+      text-align: center;
+    }
+    input {
+      width: 330px;
+    }
+    button {
+      width: 70px;
+      margin: 1px 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>계산기</h3>
+  <hr>
+  <input type="text" name="">
+  <table>`
+    <tr>
+      <td><button>BACK</button></td>
+      <td><button>CE</button></td>
+      <td><button>C</button></td>
+      <td><button>=</button></td>
+    </tr>
+    <tr>
+      <td><button>7</button></td>
+      <td><button>8</button></td>
+      <td><button>9</button></td>
+      <td><button>/</button></td>
+    </tr>
+    <tr>
+      <td><button>4</button></td>
+      <td><button>5</button></td>
+      <td><button>6</button></td>
+      <td><button>*</button></td>
+    </tr>
+    <tr>
+      <td><button>1</button></td>
+      <td><button>2</button></td>
+      <td><button>3</button></td>
+      <td><button>-</button></td>
+    </tr>
+    <tr>
+      <td><button>0</button></td>
+      <td><button>+</button></td>
+      <td><button>NONE</button></td>
+      <td><button>NONE</button></td>
+    </tr>
+  </table>
+  <script>
+    const $buttons = document.querySelectorAll("button");
+    const $input = document.querySelector("input");
+    const button_click_f=function(evt){
+      console.log(evt.target.textContent);
+      const btnText=evt.target.textContent;
+      
+      switch(btnText) {
+        case "BACK":  //입력된 문자열의 가장 오른쪽 문자 하나를 제거
+          $input.value = $input.value.substr(0,$input.value.length-1);
+          if($input.value.length == 0) {
+            $input.value = 0;
+          }
+          break;
+        case "CE": case "C": //입력된 문자열을 지우고 0으로
+          $input.value = 0;
+          break;
+        case "=": //입력된 문자열을 수식평가하여 입력필드에 결과를 표시
+        $input.value = eval($input.value);
+          break;
+        case "NONE":
+          break;
+        default: //숫자 or 연산자 : 입력된 문자열의 오른쪽에 추가
+          if($input.value == 0){
+            $input.value = btnText;
+          } else {
+            $input.value += btnText;
+          }
+        }
+
+    };
+
+    Array.from($buttons).forEach(function(ele){
+      ele.addEventListener("click",button_click_f,false);
+    });
+  </script>
+</body>
+</html>

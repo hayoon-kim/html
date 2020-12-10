@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin:0; padding:0;}
+    /* html{font-size:24px;} */
+    a { text-decoration: none;}
+    .wrapper{
+      background-color: #111;
+      position:sticky;
+      top:0px;
+    }
+    .container{
+      width:80%; margin:0 auto;
+    }
+    .upper{
+      height:30vh;
+    }
+    .upper img{
+      width: 100%; height:100%;
+      /* object-fit: cover; */
+    }
+
+    nav {background-color: #333;color:#eee;}
+    .wrapper ul {text-align: center; }
+    .wrapper ul > li {display: inline-block;padding:0.3rem 0.5rem;}
+    .wrapper ul > li > a {color:inherit} 
+    .wrapper ul > li:nth-child(1) div{
+      width:20px;height:20px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    .wrapper ul > li:nth-child(1) div:nth-child(1){
+      border:3px solid red;
+    }
+    .wrapper ul > li:nth-child(1) div:nth-child(2){
+      border:3px solid green;
+      margin-left:-14px;
+    }
+    .wrapper ul > li:nth-child(1) div:nth-child(3){
+      border:3px solid blue;
+      margin-left:-14px;
+    }
+    /* 메인 영역 */
+    .wrap-main{
+      background-color: #ccc;
+    }
+    main{
+      background-color: #fff;
+    }
+    /* 푸터 영역 */
+    footer{
+      background-color: #999;
+      position:sticky;
+      bottom:0px;
+    }
+    /* 좌측광고 */
+    .adv{
+      background-color: orangered;
+      color:#ccc;
+      position: fixed;
+      top:200px;
+      right:50px;
+      padding:10px;
+    }
+    .adv ul{
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="upper">
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/17/25/beach-1853939__340.jpg" alt="">
+  </div>
+  <div class="wrapper">
+    <nav class="container">
+      <ul>
+        <li>
+          <div></div>
+          <div></div>
+          <div></div>
+        </li>
+        <li><a href="http://www.naver.com">menu1</a></li>
+        <li><a href="http://www.google.com">menu2</a></li>
+        <li><a href="http://www.yes24.com">menu3</a></li>
+      </ul>
+    </nav>
+  </div>  
+  <div class="wrap-main">
+    <main class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique eligendi hic excepturi recusandae neque a iusto obcaecati vero quaerat, tempore quas tenetur error repellat quia veritatis nesciunt magni cum?
+      Nostrum placeat officiis quisquam similique provident optio quibusdam esse consequatur ea! Ab assumenda repudiandae voluptatem voluptatibus id dolores libero repellendus reiciendis aspernatur iste nisi dolorem, voluptatum doloremque ratione laborum explicabo?
+      Quas non accusantium eaque modi aliquid nulla adipisci! Molestias autem inventore eos. Consequatur quis dolores perferendis veritatis explicabo praesentium perspiciatis, delectus, quae et magni ex numquam animi odio nemo aperiam.
+      Eum quos ab officia vitae asperiores ut. Repellendus, illum animi vel fuga delectus suscipit perspiciatis dolorem porro labore culpa ducimus debitis consequuntur earum magni, enim sint saepe odit beatae qui!</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit, molestias praesentium laborum minus asperiores quo error laboriosam sed. Nulla blanditiis neque officia suscipit nobis debitis cumque laborum pariatur odit?
+      Culpa molestias expedita aliquid velit fugiat. Fugiat id ratione officiis accusantium excepturi aspernatur ex reiciendis nihil fugit eveniet. Assumenda explicabo dicta recusandae neque delectus earum error ad libero voluptate aut.
+      Culpa necessitatibus praesentium consequatur modi. Incidunt mollitia sunt ducimus, harum quasi dolores doloribus dolore cupiditate quos vero! Corporis nam rem, sunt perspiciatis ut asperiores nihil temporibus. Illum praesentium in nihil.
+      Vitae nemo possimus sit voluptas architecto quia dicta in! Molestiae doloribus id consectetur, officiis quibusdam quisquam, nostrum cum minima impedit architecto dolorum adipisci quidem culpa maxime deleniti magnam! Delectus, aliquam.
+    </main>
+  </div>
+  <footer>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure nobis numquam nisi esse laboriosam ipsum placeat consequuntur eaque molestias repudiandae quos eligendi fugiat, aliquid ducimus culpa praesentium. Quia, error?</p>
+  </footer>
+  <div class="adv">
+    <ul>
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+      <li>내용5</li>
+    </ul>
+  </div>
+</body>
+</html>

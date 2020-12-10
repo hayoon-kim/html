@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test9</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+    header {
+      background-color: darkolivegreen;
+      height: 10vh;
+    }
+    nav {
+      background-color: darkkhaki;
+      height: 10vh;
+    }
+    .content>.left {
+      float: left;
+      width: 70%;
+      background-color: blueviolet;
+    }
+    .content>.left>.s1 {
+      height: 30vh;
+    }
+    .content>.left>.s2 {
+      height: 40vh;
+      position: relative;
+    }
+    .content>.left>.s2>footer {
+      position: absolute; /*부모요소의 display:static이 아닌 요소를 기준*/
+      bottom: 0;
+      width: 100%;
+    }
+    .content>.right {
+      float: left;
+      width: 30%;
+      background-color: brown;
+    }
+    .content>.right>article {
+      height: 20vh;
+      background-color: darksalmon;
+    }
+    .content>.right>aside {
+      height: 50vh;
+      background-color: darkseagreen;
+    }
+    footer{
+      background-color: dodgerblue;
+    }
+    .clearfix {
+      clear: both;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <div class="content">
+    <div class="left">
+      <section class="s1">section</section>
+      <section class="s2">
+        <header>header</header>
+        section
+        <footer>footer</footer>
+      </section>
+    </div>
+    <div class="right">
+      <article>article</article>
+      <aside>aside</aside>
+    </div>
+  </div>
+  <div class="clearfix">
+    <footer>footer</footer>
+  </div>
+</body>
+</html>

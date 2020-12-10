@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test3</title>
+<style>
+  html,body {
+    height:100%;
+    margin: 0 auto;
+  }
+  body { 
+    background-color: #ccc;
+    text-align: center;
+    color:#fff;
+    }
+  header {
+    height: 20%;
+    margin: 1%;
+  }
+  header, nav, article, aside, footer{
+    background-color: #666
+  }
+  article,footer{
+    margin:1%;
+  }
+  nav {
+    width: 20%;
+    height: 60%;
+    background-color: tomato;
+    float: left;
+    margin-left: 1%;
+  }
+  section {
+    width: 56%;
+    height: 60%;
+    background: #999;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 1%;
+  }
+  aside {
+    width: 20%;
+    height: 60%;
+    float: left;
+    background-color: plum;
+    margin-left: 1%;
+  }
+  
+  footer.bottom {
+    height: 100%;
+    background: lightblue;
+  }
+  div.clearfix{
+    height: 20%;
+  }
+  .clearfix {
+    clear: both;
+  }
+</style>
+</head>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <section>
+    section
+    <header>header</header>
+    <article>article</article>
+    <footer>footer</footer>
+  </section>
+  <aside>aside</aside>
+  <div class="clearfix">
+    <footer class="bottom">footer</footer>
+  </div>
+</body>
+</html>

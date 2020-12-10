@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event</title>
+  <style>
+    form {
+      background-color: bisque;
+    }
+    input {
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <input type="checkbox">목요일
+  </form>
+  <script>
+    const $input = document.querySelector('input[type=checkbox]');
+    const $form = document.querySelector('form');
+    $input.addEventListener('click',function(evt){
+      console.log(evt);
+      console.log('input:버블링')
+    },false);
+    $form.addEventListener('click',function(evt){
+      console.log(evt);
+      console.log('form:버블링')
+    },false);
+
+
+    $input.addEventListener('click',function(evt){
+      console.log(evt);
+      console.log('input:캡처링')
+    },true);
+    $form.addEventListener('click',function(evt){
+      console.log(evt);
+      console.log('form:캡처링')
+    },true);
+
+
+    //이벤트 객체를 잡은 순서대로 실행된다.
+  </script>
+</body>
+</html>

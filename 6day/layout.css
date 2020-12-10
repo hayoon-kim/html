@@ -1,0 +1,91 @@
+* {
+  margin:0; padding: 0;
+  outline: 1px dotted red;
+  color: white;
+}
+
+/* common */
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: floralwhite;
+  text-align: center;
+}
+
+/* uppper most */
+.uppermost {
+  background-color: #fff988;
+}
+.container-um {
+  background-color: #ffc658;
+}
+/* header */
+header {
+  background-color: #ffb3ab;
+}
+header .container-h {
+  background-color: #ca837c;
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/30/18/33/cat-2273598_960_720.jpg");
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+
+}
+/* nav */
+nav {
+  background-color: #a86f5f;
+}
+nav .container-n {
+  background-color: #774335;
+}
+/* main */
+main {
+  background-color: #1d57a5;
+}
+main .container-m {
+  background-color: #002f75;
+  outline: 3px solid red;
+  overflow: hidden;
+}
+.container-m section {
+  float: left;
+}
+.container-m section.s1 {
+  background-color: #d1eaff;
+  width: 50%;
+}
+.container-m section.s2 {
+  width: 30%;
+  background-color: #9eb8ff;
+}
+.container-m section.s3 {
+  width: 20%;
+  background-color: #6c88cc;
+}
+/* footer menu */
+.footermenu {
+  background-color: #003a40;
+}
+.footermenu .container-fm {
+  background-color: #00151a;
+}
+/* footer */
+footer {
+  background-color: #263238;
+}
+footer .container-f {
+  background-color: #000a12;
+}
+
+
+/*배경색 제거*/
+
+header,nav,main {
+  background-color: transparent;
+}
+
+
+/*clearfix*/
+.clearfix {
+  clear: both;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test5</title>
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+    .box .item.item1 {
+      background-color: paleturquoise;
+    }
+    .box .item.item2 {
+      background-color: palegreen;
+      border: 1px solid blue;
+    }
+    .box .item.item3 {
+      background-color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item item1">item1</div><div class="item item2">item2</div><div class="item item3">item3</div>
+  </div>
+</body>
+</html>

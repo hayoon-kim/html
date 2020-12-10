@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.box{
+      background-color: darkgrey;
+    }
+    div.item{
+      width: 100px;
+      height: 100px;
+    }
+    div.item1{
+      /* width: 100px;
+      height: 100px; */
+      background-color: burlywood;
+      float: left;
+    }
+    div.item2{
+      width: 200px;
+      height: 150px;
+      background-color: cadetblue;
+      float: left;
+    }
+    div.item3{
+      /* width: 100px;
+      height: 100px; */
+      background-color: cornflowerblue;
+      float: left;
+    }
+    div.item4{
+      width: 200px;
+      height: 200px;
+      background-color: darkslateblue;
+      /* clear: both; */
+    }
+    .clearfix{clear: both;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="clearfix">
+      <div class="item item4">
+        item4
+      </div>
+    </div>
+  </div>
+</body>
+</html>

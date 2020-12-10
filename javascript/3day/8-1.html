@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Dom tree</title>
+</head>
+<body>
+  <h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+  <hr>
+  <p id = "firstP"
+     style = "color:blue; background:yellow"
+    onclick = "this.style.color = 'teal'">
+    이것은 <span style = "color:red">문장입니다.</span>
+  </p>
+
+  <script>
+    let p = document.getElementById("fisrtP");
+    let text = "p.id = " + p.id + "\n";
+    test += "p.tagName = " + p.name + "\n";
+    test += "p.innerHTML = " + p.innerHTML + "\n";
+    test += "p.style.color = " + p.style.color + "\n";
+    test += "p.onclick = " + p.onclick + "\n";
+    test += "p.childElementCount = " + p.childElementCount + "\n";
+    test += "너비 = " + p.offsetWidth + "\n";
+    test += "높이 = " + p.offsetHeight + "\n";
+
+    alert(text);
+  </script>
+</body>
+</html>

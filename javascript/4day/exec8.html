@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // case1)
+    window.addEventListener('load',function(){
+      // load="현재 문서가 다 읽혀졌을때"
+      const elem = document.getElementById("myBody");
+      if(elem == null)
+        alert("body is not made yet");
+    });
+// 익명함수
+
+    //case2)
+    window.addEventListener('load',init);
+    function init(){
+      const elem = document.getElementById("myBody");
+      if(elem == null)
+        alert("body is not made yet");
+    }
+// 이름정의 한 함수
+
+    //case3)
+    window.addEventListener('load',() => {
+      const elem = document.getElementById("myBody");
+      if(elem == null)
+        alert("body is not made yet");
+    }
+  );
+// 람다식 함수
+  </script>
+</head>
+<body id="myBody">
+  <p class="first">
+    hello
+  </p>
+</body>
+</html>

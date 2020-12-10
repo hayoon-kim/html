@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exec9</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+    <!-- <span>
+      hello
+    </span> -->
+
+  <script>
+
+    const $myDiv=document.getElementById("myDiv");
+    const $span=document.createElement("span");
+    $span.innerHTML = 'hello';
+    $span.style.backgroundColor = 'yellow';
+    $span.style.fontSize='2em';
+    $span.addEventListener("click",function(){
+      $span.style.fontWeight = 'bold';
+      $span.style.color='blue';
+    });
+    $span.setAttribute("id","hi");
+    $myDiv.appendChild($span);
+  </script>
+</body>
+</html>

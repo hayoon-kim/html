@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exec4</title>
+</head>
+<body>
+  <div id="div1">
+    안녕하세요. 환영합니다.
+  </div>
+
+  <script>
+    const obj = document.getElementById('div1');
+    // obj.addEventListener('click',f);
+    // obj.onclick = f;
+    // obj.onclick = function(){
+    //   obj.style.backgroundColor = 'orchid';
+    // }
+
+    obj.onclick = () => {
+      obj.style.backgroundColor = 'orchid';
+    }
+
+    // function f(){
+    //   obj.style.backgroundColor = "orchid";
+    // }
+    
+  </script>
+</body>
+</html>
