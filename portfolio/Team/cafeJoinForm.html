@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페등록</title>
+  <style>
+    * {
+      /* outline: 1px solid red; */
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    ol, ul {
+      list-style-type: none;
+      margin-left: 0;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+    }
+
+    section #cafeJoinForm {
+      width: 400px;
+    }
+
+    section #cafeJoinForm .form-group {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    section #cafeJoinForm .form-group span {
+      padding: 0px;
+    }
+
+    section #cafeJoinForm .form-group input {
+      padding: 10px;
+      margin: 10px 0px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <form action="#" name="cafeJoinForm" id="cafeJoinForm">
+      <div class="form-group">
+        <label for="cafe_name">
+          <span>카페이름</span>
+        </label>
+        <input type="text" name="cafe_name" id="cafe_name" >
+      </div>
+      <div class="form-group">
+        <label for="bn">
+          <span>사업자번호</span>
+        </label>
+        <input type="text" name="cafe_currentpw" id="bn" placeholder="비밀번호">
+      </div>
+      <div class="form-group">
+        <label for="cafe_address1">
+          <span>주소</span>
+        </label>
+        <input type="text" name="cafe_address1" id="cafe_address1" placeholder="ex) 서울특별시 중구">
+      </div>
+      <div class="form-group">
+        <label for="cafe_address2">
+          <span>상세주소</span>
+        </label>
+        <input type="text" name="cafe_address2" id="cafe_address2" placeholder="ex) 을지로 010">
+      </div>
+      <div class="form-group">
+        <label for="cafe_tel">
+          <span>전화번호</span>
+        </label>
+        <input type="tel" name="cafe_tel" id="cafe_tel" placeholder="ex) 010-1234-5678">
+      </div>
+      <div class="form-group">
+        <span>영업시간</span>
+        <label for="openTime">Open</label>
+        <input type="time" name="openTime" id="openTime">
+        <label for="closeTime">Close</label>
+        <input type="time" name="closeTime" id="closeTime">
+      </div>
+      <div class="form-group">
+        <label for="cfile"><span>이미지 등록</span></label>
+        <input type="file" name="cfile" id="cfile">
+      </div>
+      <div class="form-group">
+        <label for="cafe_content">
+          <span>상세설명</span>
+        </label>
+        <textarea name="cafe_content" id="cafe_content" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" id="submitBtn" value="내 카페 등록">
+      </div>
+    </form>
+    </form>
+  </section>
+</body>
+</html>
